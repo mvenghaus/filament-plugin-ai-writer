@@ -179,11 +179,11 @@ Writing the text to a field would look like this:
 ->target(fn(Set $set, Response $response) => $set('target_field', $response->text))
 ```
 
-# Examples
+## Examples
 
 With this flexible structure you can do a lot of awesome things. Let's dive into some examples.
 
-## Source Field -> Target Field
+### Source Field -> Target Field
 
 **Code**
 
@@ -198,7 +198,7 @@ AIWriterButton::make('generate')
 ![Demo](https://raw.githubusercontent.com/mvenghaus/filament-plugin-ai-writer/main/images/source_field_target_field.gif)
 
 
-## Appending text using modal
+### Appending text using modal
 
 **Code**
 
@@ -218,7 +218,7 @@ AIWriterButton::make('generate')
 
 ![Demo](https://raw.githubusercontent.com/mvenghaus/filament-plugin-ai-writer/main/images/append_text_using_modal.gif)
 
-## Translate field
+### Translate field
 
 **Code**
 
@@ -231,7 +231,7 @@ AIWriterButton::make('translate')
 **Demo**
 ![Demo](https://raw.githubusercontent.com/mvenghaus/filament-plugin-ai-writer/main/images/translate_field.gif)
 
-## Product Description
+### Product Description
 
 **Code**
 
@@ -252,7 +252,7 @@ AIWriterButton::make('generate')
 **Demo**
 ![Demo](https://raw.githubusercontent.com/mvenghaus/filament-plugin-ai-writer/main/images/product_description.gif)
 
-# Writing your own AI Integration
+## Writing your own AI Integration
 
 Currently only Open AI is supported. But you can easily write your own integration.
 To achive this you simply have to implement the "Integration" contract.
@@ -301,5 +301,5 @@ class AdminPanelProvider extends PanelProvider
 
 ```
 
-# Contact
+## Contact
 If you any questions or you find a bug, please let me now at [Github](https://github.com/mvenghaus/filament-plugin-ai-writer/issues) or reach out on Discord.
