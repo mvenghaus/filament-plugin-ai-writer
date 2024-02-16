@@ -229,6 +229,7 @@ AIWriterButton::make('translate')
 ```
 
 **Demo**
+
 ![Demo](https://raw.githubusercontent.com/mvenghaus/filament-plugin-ai-writer/main/images/translate_field.gif)
 
 ### Product Description
@@ -250,6 +251,7 @@ AIWriterButton::make('generate')
 ```
 
 **Demo**
+
 ![Demo](https://raw.githubusercontent.com/mvenghaus/filament-plugin-ai-writer/main/images/product_description.gif)
 
 ## Usage without a form
