@@ -4,7 +4,7 @@ Unchain the power of AI in your Filament Panel! With this plugin you can easily 
 
 ## Requirements
 
-You need Filament v3, a valid license and an OpenAI Api Token.
+You need Filament v3, a valid license and an OpenAI API Token.
 
 ## Installation
 
