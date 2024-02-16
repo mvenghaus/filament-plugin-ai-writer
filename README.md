@@ -129,7 +129,7 @@ The Closure is evaluated like everything in Filament so you can use "Get", "Set"
 
 #### Modal
 
-Maybe you just want to generate a text on the fly without having any source text or field. There comes the "sourceModal" method in handy. 
+Maybe you just want to generate a text on the fly without having any source text or field. There comes the "sourceModal" method in handy.
 
 ```php
 ->sourceModal()
@@ -251,6 +251,25 @@ AIWriterButton::make('generate')
 
 **Demo**
 ![Demo](https://raw.githubusercontent.com/mvenghaus/filament-plugin-ai-writer/main/images/product_description.gif)
+
+## Usage without a form
+
+You can also use the integration without the form component.
+
+```php
+<?php
+
+use Mvenghaus\FilamentPluginAiWriter\Integration\OpenAI;
+use Mvenghaus\FilamentPluginAiWriter\Integration\OpenAI\Models\Gpt4;
+
+$integration = OpenAI::make('YOUR_TOKEN', Gpt4::make());
+
+$response = $integration->request('Tell me a joke');
+
+echo $response->text;
+
+```
+
 
 ## Writing your own AI Integration
 
