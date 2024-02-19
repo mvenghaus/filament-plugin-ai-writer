@@ -12,10 +12,10 @@ To install the package via composer you need to add the private repository to yo
 
 ```json
 "repositories": [
-  {
-    "type": "composer",
-    "url": "https://filament-plugin-ai-writer.composer.sh"
-  }
+    {
+        "type": "composer",
+        "url": "https://filament-plugin-ai-writer.composer.sh"
+    }
 ]
 
 ```
@@ -65,6 +65,38 @@ class AdminPanelProvider extends PanelProvider
 ...
 
 ```
+
+### Storing the token
+
+You are free to store the token wherever you want.
+But if you only have one global token it's a good practice to store it in .env and resolving it using the services config.
+
+#### .env
+
+```
+OPENAI_TOKEN="MY_TOKEN"
+```
+
+#### config/services.php
+
+```php
+<?php
+
+return [
+    ...
+    'openai' => [
+        'token' => env('OPENAI_TOKEN')
+    ]
+];
+
+```
+
+#### Use token in plugin configuration
+
+```php
+OpenAI::make(config('services.openai.token'), ...);
+```
+
 
 ### Options
 
