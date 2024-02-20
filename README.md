@@ -124,7 +124,7 @@ The principle is always structured as follows:
 ```php
 <?php
 
-use Mvenghaus\FilamentPluginAiWriter\Forms\Components\AIWriterButton;
+use Mvenghaus\FilamentPluginAIWriter\Forms\Components\AIWriterButton;
 
 ...
 
