@@ -36,8 +36,8 @@ Register the plugin in panel provider:
 ```php
 
 use Mvenghaus\FilamentPluginAIWriter\FilamentPlugin;
-use Mvenghaus\FilamentPluginAiWriter\Integration\OpenAI;
-use Mvenghaus\FilamentPluginAiWriter\Integration\OpenAI\Models\Gpt4;
+use Mvenghaus\FilamentPluginAIWriter\Integrations\OpenAI\OpenAI;
+use Mvenghaus\FilamentPluginAIWriter\Integrations\OpenAI\Models\Gpt4;
 
 ...
 
@@ -105,8 +105,8 @@ To limit your costs you can use the maxTokens option.
 
 ### OpenAI - Supported Models
 
-- Mvenghaus\FilamentPluginAiWriter\Integration\OpenAI\Models\Gpt35Turbo
-- Mvenghaus\FilamentPluginAiWriter\Integration\OpenAI\Models\Gpt4
+- Mvenghaus\FilamentPluginAIWriter\Integrations\OpenAI\Models\Gpt35Turbo
+- Mvenghaus\FilamentPluginAiWriter\Integrations\OpenAI\Models\Gpt4
 
 ## Usage
 
@@ -293,8 +293,8 @@ You can also use the integration without the form component.
 ```php
 <?php
 
-use Mvenghaus\FilamentPluginAiWriter\Integration\OpenAI;
-use Mvenghaus\FilamentPluginAiWriter\Integration\OpenAI\Models\Gpt4;
+use Mvenghaus\FilamentPluginAIWriter\Integrations\OpenAI;
+use Mvenghaus\FilamentPluginAIWriter\Integrations\OpenAI\Models\Gpt4;
 
 $integration = OpenAI::make('YOUR_TOKEN', Gpt4::make());
 
