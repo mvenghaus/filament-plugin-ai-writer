@@ -2,6 +2,10 @@
 
 Unchain the power of AI in your Filament Panel! With this plugin you can easily let AI write all your content.
 
+## Get a license
+
+[**Buy a license here**](https://checkout.anystack.sh/filament-plugin-ai-writer)
+
 ## Requirements
 
 You need Filament v3, a valid license and an OpenAI API Token.
